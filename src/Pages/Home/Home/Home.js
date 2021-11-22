@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../Shared/Navbar/Navbar";
 import Banner from "../Banner/Banner";
 import BrandList from "../BrandList/BrandList";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <BrandList />
+      <Footer />
     </>
   );
 };
