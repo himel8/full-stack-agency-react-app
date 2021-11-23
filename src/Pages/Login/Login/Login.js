@@ -4,7 +4,9 @@ import { makeStyles } from "@mui/styles";
 import React from "react";
 import logo from "../../../logos/logo.png";
 import { Link } from "react-router-dom";
+import useFirebase from "../../../Hooks/useFirebase";
 const Login = () => {
+  const { user, signInWithGoogle } = useFirebase();
   const theme = useTheme();
   const navStyle = makeStyles({
     loginBtnsize: {
@@ -53,6 +55,7 @@ const Login = () => {
             </Typography>
             <Button
               className={loginBtnsize}
+              onClick={signInWithGoogle}
               sx={{
                 mb: 3,
                 justifyContent: "flex-start",
