@@ -103,6 +103,16 @@ const Navbar = () => {
                 Our Team
               </NavLink>
               <NavLink
+                to="dashboard"
+                style={({ isActive }) => ({
+                  fontWeight: "600",
+                  borderBottom: isActive ? "2px solid green" : "",
+                })}
+                className={navItem}
+              >
+                Dashboard
+              </NavLink>
+              <NavLink
                 to="contact"
                 style={({ isActive }) => ({
                   fontWeight: "600",

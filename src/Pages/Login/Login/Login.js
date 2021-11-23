@@ -6,7 +6,7 @@ import logo from "../../../logos/logo.png";
 import { Link } from "react-router-dom";
 import useFirebase from "../../../Hooks/useFirebase";
 const Login = () => {
-  const { user, signInWithGoogle } = useFirebase();
+  const { signInWithGoogle } = useFirebase();
   const theme = useTheme();
   const navStyle = makeStyles({
     loginBtnsize: {
