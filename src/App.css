@@ -42,3 +42,27 @@
   color: #3f90fc;
 }
 /* login css end  */
+/* order css start  */
+.orderBtn {
+  padding: 8px 30px !important;
+  background-color: #111430 !important;
+  color: #fff !important;
+}
+.orderBtn:hover {
+  padding: 8px 30px;
+  background-color: #111430;
+  color: #fff;
+}
+/* order css end  */
+/* addservice css start  */
+.addserviceBtn button {
+  padding: 8px 20px !important;
+  background-color: #009444;
+  color: #fff;
+}
+.addserviceBtn button:hover {
+  padding: 8px 20px !important;
+  background-color: #009444;
+  color: #fff;
+}
+/* addservice css end  */

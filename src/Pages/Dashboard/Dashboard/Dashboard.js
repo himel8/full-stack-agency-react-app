@@ -16,6 +16,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link, Outlet } from "react-router-dom";
 import FormatListBulletedOutlinedIcon from "@mui/icons-material/FormatListBulletedOutlined";
 import ReviewsOutlinedIcon from "@mui/icons-material/ReviewsOutlined";
+import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import logo from "../../../logos/logo.png";
 
 const drawerWidth = 240;
@@ -60,6 +61,14 @@ const Dashboard = (props) => {
             <ListItemText primary="Review" />
           </ListItem>
         </Link>
+        <Link to="/dashboard/addservice">
+          <ListItem button>
+            <ListItemIcon>
+              <AddOutlinedIcon />
+            </ListItemIcon>
+            <ListItemText primary="Add Service" />
+          </ListItem>
+        </Link>
       </List>
     </div>
   );
@@ -68,7 +77,7 @@ const Dashboard = (props) => {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ height: "100vh", display: "flex", backgroundColor: "#F4F7FC" }}>
       <CssBaseline />
       <AppBar
         position="fixed"
